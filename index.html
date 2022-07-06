@@ -20,7 +20,7 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header class="header">
+    <header class="header section">
       <div class="container navigation-contacts">
         <nav class="navigation">
           <a class="logo" href="./index.html"
@@ -52,13 +52,15 @@
     </header>
     <!-- Заголовок -->
     <main>
-      <div class="container">
-        <section class="hero">
+      <section class="hero section">
+        <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="title-button">Заказать услугу</button>
-        </section>
-        <!-- Особенности -->
-        <section class="feauters">
+        </div>
+      </section>
+      <!-- Особенности -->
+      <section class="feauters section">
+        <div class="container">
           <ul class="feauters-list list">
             <li class="feauters-item">
               <h2 class="feauters-subtitle">Внимание к деталям</h2>
@@ -89,9 +91,11 @@
               </p>
             </li>
           </ul>
-        </section>
-        <!-- Чем мы занимаемся -->
-        <section class="box">
+        </div>
+      </section>
+      <!-- Чем мы занимаемся -->
+      <section class="box section">
+        <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="box-list list">
             <li class="box-item">
@@ -119,9 +123,11 @@
               />
             </li>
           </ul>
-        </section>
-        <!-- Наша команда -->
-        <section class="team">
+        </div>
+      </section>
+      <!-- Наша команда -->
+      <section class="team section">
+        <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
@@ -131,8 +137,10 @@
                 alt="Игорь Демьяненко"
                 width="270"
               />
-              <h3 class="team-subtitle">Игорь Демьяненко</h3>
-              <p class="team-desc">Product Designer</p>
+              <div class="team-wrapper">
+                <h3 class="team-subtitle">Игорь Демьяненко</h3>
+                <p class="team-desc">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -141,8 +149,10 @@
                 alt="Ольга Репина"
                 width="270"
               />
-              <h3 class="team-subtitle">Ольга Репина</h3>
-              <p class="team-desc">Frontend Developer</p>
+              <div class="team-wrapper">
+                <h3 class="team-subtitle">Ольга Репина</h3>
+                <p class="team-desc">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -151,8 +161,10 @@
                 alt="Николай Тарасов"
                 width="270"
               />
-              <h3 class="team-subtitle">Николай Тарасов</h3>
-              <p class="team-desc">Marketing</p>
+              <div class="team-wrapper">
+                <h3 class="team-subtitle">Николай Тарасов</h3>
+                <p class="team-desc">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -161,21 +173,21 @@
                 alt="Михаил Ермаков"
                 width="270"
               />
-              <h3 class="team-subtitle">Михаил Ермаков</h3>
-              <p class="team-desc">UI Designer</p>
+              <div class="team-wrapper">
+                <h3 class="team-subtitle">Михаил Ермаков</h3>
+                <p class="team-desc">UI Designer</p>
+              </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <!-- Подвал сайта -->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
-        <div class="container-footer-logo">
-          <a href="./index.html" class="footer-logo"
-            ><span class="logo-blue">Web</span>Studio</a
-          >
-        </div>
+        <a href="./index.html" class="footer-logo"
+          ><span class="logo-blue">Web</span>Studio</a
+        >
         <address class="footer-address">
           <ul class="address-list list">
             <li class="address-item">

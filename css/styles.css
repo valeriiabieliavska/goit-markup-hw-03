@@ -1,13 +1,26 @@
 body {
-  background-color: #ffffff;
   color: #757575;
   font-family: "Roboto", sans-serif;
 }
 
-section {
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Шапка сайта */
 
 .container {
@@ -18,8 +31,9 @@ section {
   margin-right: auto;
 }
 
-header {
+.header {
   border-bottom: 1px solid #ececec;
+  padding: 0;
 }
 
 .navigation-contacts {
@@ -105,6 +119,7 @@ header {
 
 .hero {
   background-color: #2f303a;
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -116,10 +131,9 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  margin-top: 0;
+  width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
-  margin-right: 226px;
-  margin-left: 226px;
 }
 
 .title-button {
@@ -133,9 +147,8 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   display: block;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  border: none;
 
   padding: 10px 32px;
   min-width: 200px;
@@ -143,6 +156,10 @@ header {
 }
 
 /* Особеннсти */
+
+.feauters {
+  padding-bottom: 0;
+}
 
 .feauters-subtitle {
   font-weight: 700;
@@ -152,7 +169,6 @@ header {
   text-transform: uppercase;
   color: #212121;
 
-  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -162,9 +178,7 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-
-  margin-top: 0;
-  margin-bottom: 0;
+  width: 270px;
 }
 
 .feauters-list {
@@ -190,14 +204,11 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .box-list {
   display: flex;
-  padding-left: 0;
 }
 
 .box-item {
@@ -217,9 +228,7 @@ header {
   letter-spacing: 0.03em;
   color: #212121;
 
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .team-desc {
@@ -229,9 +238,10 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+}
 
-  margin-top: 0;
-  margin-bottom: 0;
+.team-wrapper {
+  padding: 30px 0;
 }
 
 .team {
@@ -260,8 +270,7 @@ header {
 
 .footer {
   background-color: #2f303a;
-
-  height: 252px;
+  padding: 60px 0;
 }
 
 .container-footer-logo {
@@ -281,10 +290,8 @@ header {
   letter-spacing: 0.03em;
 }
 
-.address-list {
-  margin-left: 0;
-  padding-left: 0;
-  padding-bottom: 60px;
+.footer-address {
+  margin-top: 20px;
 }
 
 .address-item {
@@ -315,10 +322,9 @@ header {
   letter-spacing: 0.03em;
 }
 
-.list {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
+.address-link-contacts:hover,
+.address-link-contacts:focus {
+  color: #2196f3;
 }
 
 .current-link {
@@ -357,6 +363,11 @@ header {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.menu-button.active-btn {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
 .menu-list {
   display: flex;
   justify-content: center;
@@ -381,21 +392,15 @@ header {
 
   margin-top: 0;
   margin-bottom: 4px;
-  padding-left: 24px;
-  padding-top: 20px;
 }
 
 .portfolio-desc {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.03em;
   color: #757575;
 
-  margin-top: 0;
-  padding-top: 0;
-  padding-left: 24px;
-  padding-bottom: 20px;
+  margin: 0;
 }
 
 .portfolio-list {
@@ -411,7 +416,7 @@ header {
   background: #ffffff;
   margin-right: 30px;
   margin-bottom: 30px;
-  flex-basis: calc(100 / 3 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 img {
@@ -421,7 +426,7 @@ img {
 .container-text {
   border: 1px solid #eeeeee;
   border-top: none;
-  height: 110px;
+  padding: 20px 24px;
 }
 
 /* Цвет заголовка hero-title #FFFFFF */
